@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="pcg.talkbackplus"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission
+        android:name="android.permission.BIND_ACCESSIBILITY_SERVICE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- Required for shortcuts and widgets. -->
+    <uses-permission android:name="com.google.android.marvin.feedback.permission.TALKBACK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- Required for labeling. -->
+    <uses-permission android:name="com.google.android.marvin.talkback.permission.LABELING" />
+    <!-- Required for managing audio levels on GB. -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- Required for bugly. -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/floating2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+        <meta-data
+            android:name="com.taobao.android.hotfix.IDSECRET"
+            android:value="25837210" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.APPSECRET"
+            android:value="499da7cb5479bca24a6ecbd459112dda" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.RSASECRET"
+            android:value="MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCLdhxyd1gSNalc2KR3NaT5Nko2PX9S+CVHLWZV8x9xNwHvdT8dFz+7LkV9A06aEDTdd25naRumo5p2Lp2OtrOksCROtX8Ha9hTzmIw7J4nVI3hrX1xvOWky6xhQp2F3KIlu4wUvVpC1TQ1h4FFS/yC345gkqi3wz0F3PfND78wEfMiZ/4oW3BaDt9MD84iRX7N62k+8vzvD23KQVTVqcXyCtmlmBX5PAEtaCGKWJZ1FnCeiB8ZjrChwYaEK0lUu5xyY0iWcGoqkA3sajdpP9CBAiTTJkVWNGz9YFNhuh2rFQcmiU68MpbsGVp9cp0heMJdYj4nMHMq3J1GgqVi1b2vAgMBAAECggEAP+03Iv0zwL0aUjX4RbCwW5AYOn68E3Mt20+jPjjAq+vUFki/Un1quEmAjspqSFKveOkbEYnro9oQnqXFkTqMZCxdqDqn7OXxdpD/D4AXCt5GXzFgdDdraLv322lmvYqiRPuQPZ2Cd2o1kWf4yKQJLpB9OiVf80Qqf7qHWFckg0q0LcTy5O8wYbkiVJdFkMWHzmu5JjZ1xIA7B3xKFpBMUyRAjOr7erAeTeu7CuaVxxZE0RWkq0+S4grfeivO8ggy4msPiwvVjR26GBD9yjpMb+yXbldLIjJ3OWjrLaiUK1tMz3kfRSOuCLeSYqRrnkWDnaYsrahqWERi+/O/5sekcQKBgQDz18fLFvlmgmfgQrb1AvpQpI3fNqbcEX9o5l4i7CUvAN11GGf7M739I3Qf3Yd6eNqGfqoytxmBhEseFUWeGylhLwOMqi5HXps34NyqffIyS1QvusE3+Z6wflboEyaJxT+AwclVBxuskyGsMzIjpKDImYVkQhh8je8Fk+d5/5Kk6QKBgQCSahY17qOrdygos43aCKAK+dgM9czU4u5mmi5B84TjijAUaYDI1pcWLmQ++YYR8OZZX0F7/hH5ELdWuYlCONZNrosM1dwxxQ0sGVCSDB6UxjcyNqHMnBVaf3YvWhmQ0EDPxGgK1XAyFpZAYk9rXICyjnWF3S0Y2xiZcRXMPRSO1wKBgQCBixRwl47936/R23+ZYPCc4R8iA8XXyk/26dP/F5eVhg8hA0tSkCWSE0DBIQ61iPkHVMmU0eNyBFdn7wMiQOnV4IUxOMQHVIJ/yC1TQj/malCaXswBsdKVjzkaZ/okXS8kd08/pdwU7cGI21X6y55DlBPitJ6PpVPjkbT7AkTk6QKBgG6b4mef/tl8TURiURmURoPEN6miz7lMLtooRCXiuFPFg4kIIxiWtNE2/thsXRKUsRB3W9s2F5HXRQopZD44/fz1jWqG7bBTsx3LigirSzcNf4lZqGYQzDjv7fLb2FCEY1ISiJ8Wm4nbcmr1WhY7baZ25OXaL0WFz1GsEtGWmz9FAoGBAMhxduF8P60avmzQfdrPoCVMvx08F7rErFOMoyq/IIpYSkk1b2L+/T/HAbrlCWnzazaHx+DauZE+7bCZI3pz20K6Y3CFT3206rnFnItl42INY3i5M5YdgciEb9oADVVkgC/sxe6visPN4wAaEZKR4M6Yoyo1esu242YSPnDHBDgw" />
+        <meta-data
+            android:name="IFLYTEK_APPKEY"
+            android:value="5bc93b1d" />
+
+        <service
+            android:name="pcg.talkbackplus.TalkBackPlusService"
+            android:directBootAware="true"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+
+                <category android:name="android.accessibilityservice.category.FEEDBACK_AUDIBLE" />
+                <category android:name="android.accessibilityservice.category.FEEDBACK_HAPTIC" />
+                <category android:name="android.accessibilityservice.category.FEEDBACK_SPOKEN" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/talkbackplus_accessibility" />
+        </service>
+
+        <activity
+            android:name="pcg.talkbackplus.Activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.android.talkback.BootReceiver"
+            android:directBootAware="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <!-- TalkBack Preferences -->
+        <activity
+            android:name="com.android.talkback.TalkBackPreferencesActivity"
+            android:exported="true"
+            android:label="@string/blindhelper_preferences_title"
+            android:launchMode="singleTop"
+            android:taskAffinity="com.android.talkback.SettingsAffinity"
+            android:theme="@style/TalkBackSettings"
+            tools:ignore="ExportedActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.accessibilityservice.SERVICE_SETTINGS" />
+            </intent-filter>
+        </activity>
+
+        <!-- TalkBack Gesture Shortcut Preferences -->
+        <activity
+            android:name="com.android.talkback.TalkBackShortcutPreferencesActivity"
+            android:exported="true"
+            android:label="@string/talkback_preferences_title"
+            android:launchMode="singleTop"
+            android:taskAffinity="com.android.talkback.SettingsAffinity"
+            android:theme="@style/TalkBackSettings"
+            tools:ignore="ExportedActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <!-- TalkBack Keyboard Shortcut Preferences -->
+        <activity
+            android:name="com.android.talkback.TalkBackKeyboardShortcutPreferencesActivity"
+            android:exported="true"
+            android:label="@string/talkback_preferences_title"
+            android:launchMode="singleTop"
+            android:taskAffinity="com.android.talkback.SettingsAffinity"
+            android:theme="@style/TalkBackSettings"
+            tools:ignore="ExportedActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <!-- TalkBack dump event preferences -->
+        <activity
+            android:name="com.android.talkback.TalkBackDumpAccessibilityEventActivity"
+            android:exported="false"
+            android:label="@string/talkback_preferences_title"
+            android:launchMode="singleTop"
+            android:taskAffinity="com.android.talkback.SettingsAffinity"
+            android:theme="@style/TalkBackSettings" />
+
+        <!-- Accessibility tutorial -->
+        <activity
+            android:name="com.android.talkback.tutorial.AccessibilityTutorialActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:directBootAware="true"
+            android:exported="false"
+            android:immersive="true"
+            android:label="@string/accessibility_tutorial_title"
+            android:launchMode="singleInstance"
+            android:theme="@style/TutorialActivityTheme" />
+        <activity
+            android:name="com.android.talkback.labeling.LabelImportActivity"
+            android:enabled="@bool/atLeastJellyBeanMR2"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:theme="@style/DialogStyle" />
+
+        <!-- Custom Label Manager - Summary Activity -->
+        <activity
+            android:name="com.android.talkback.labeling.LabelManagerSummaryActivity"
+            android:exported="false"
+            android:label="@string/label_manager_summary_title"
+            android:launchMode="singleTop"
+            android:taskAffinity="com.android.talkback.SettingsAffinity"
+            android:theme="@style/TalkBackSettings" />
+
+        <!-- Custom Label Manager - Package Activity -->
+        <activity
+            android:name="com.android.talkback.labeling.LabelManagerPackageActivity"
+            android:exported="false"
+            android:label="@string/label_manager_package_title"
+            android:launchMode="singleTop"
+            android:taskAffinity="com.android.talkback.SettingsAffinity" />
+
+        <!-- Gesture Change Notification Activity -->
+        <activity
+            android:name="com.android.talkback.GestureChangeNotificationActivity"
+            android:directBootAware="true"
+            android:exported="true"
+            android:theme="@style/DialogStyle"
+            tools:ignore="ExportedActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <!-- Notification Activity used periodically to inform the user of changes -->
+        <activity
+            android:name="com.android.talkback.NotificationActivity"
+            android:directBootAware="true"
+            android:exported="true"
+            android:theme="@style/DialogStyle"
+            tools:ignore="ExportedActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <!-- Proxy for search button long-press -->
+        <activity
+            android:name="com.android.talkback.ShortcutProxyActivity"
+            android:directBootAware="true"
+            android:enabled="false"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:label="@string/label_talkback_context_menu"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoDisplay"
+            tools:ignore="ExportedActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH_LONG_PRESS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.talkback.WebActivity"
+            android:exported="false" />
+
+        <!-- Content provider for custom label data -->
+        <provider
+            android:name="com.android.talkback.labeling.LabelProvider"
+            android:authorities="${applicationId}.providers.LabelProvider"
+            android:directBootAware="true"
+            android:exported="true"
+            android:readPermission="com.google.android.marvin.talkback.permission.LABELING"
+            android:writePermission="com.google.android.marvin.talkback.permission.LABELING" />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.providers.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name="pcg.talkbackplus.Activities.SettingActivity"
+            android:label="@string/blindhelper_preferences_title"
+            android:theme="@style/Theme.AppCompat.Light">
+        </activity>
+
+    </application>
+
+</manifest>
